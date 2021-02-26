@@ -1,5 +1,7 @@
 import requests as re
 
+print("Heyyy")
+
 def delete_quarantines(agentId):
 	response = re.get('https://xxxxxxxx.helix.apps.fireeye.com/hx/api/v3/hosts/{}/quarantines'.format(agentId), verify=False  ,auth=('xxxx', 'xxxxxx'))
 	after_json = response.json()
